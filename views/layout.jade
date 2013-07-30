@@ -1,7 +1,24 @@
 doctype 5
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.css')
+		link(rel='stylesheet', href='/stylesheets/pad.min.css')
+	body
+		section.hero
+			.container
+				.navbar
+					.navbar-inner
+						.container
+							a(href="#")
+								img(src = "/images/weav-logo-tag-white.png")
+								
+		section.block.alt
+			.container
+				.row
+					.offset.span9
+						block content
+	footer
+		p
+			|Thanks for checking out weav
